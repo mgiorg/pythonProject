@@ -6,6 +6,15 @@ from PyQt5.QtGui import QPainter, QColor, QFont
 
 
 class SnakeGame(QWidget):
+    grid_size = None
+    speed = None
+    snake = None
+    direction = None
+    food = None
+    score = None
+    game_over = None
+    timer = None
+
     def __init__(self):
         super().__init__()
         self.init_game()
